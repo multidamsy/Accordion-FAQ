@@ -1,0 +1,142 @@
+body {
+    max-width: 100%;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+p, h2 {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+h2 {
+    margin-top: 15%;
+    margin-top: 20px;
+}
+p {
+    line-height: 1.1rem;
+}
+#bodyCover {
+    padding: 10%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+} 
+#faqBox {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    height: fit-content;
+    min-height: 500px;
+    max-width: 800px;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+}
+div.left {
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: 210%;
+    background-position: 115% 65%;
+    background-repeat: no-repeat;
+    width: 50%;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+div.right {
+    width: 50%;
+    padding-right: 6%;
+    padding-top: 7%;
+}
+button {
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    outline: none;
+    background-color: white;
+    padding-left: 0;
+    transition: 0.8;
+    font-size: 1.4em;
+}
+.ans {
+    display: none;
+    overflow: hidden;
+}
+.float {
+    float: right;
+}
+.flip {
+    transform: rotateX(180deg);
+}
+img.img1 {
+    width: 11%;
+    left: 16.5%;
+    top: 50%;
+    position: absolute;
+}
+img.img2 {
+    width: 100%;
+    display: inline;
+    margin: auto 0;
+    top: 50%;
+    margin-left: -35%;
+}
+div.faqItem {
+    border-bottom: solid rgba(128, 128, 128, 0.527) .5px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.active {
+    font-weight: bold;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    display: block;
+    width: 100%;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 570px) {
+    #bodyCover {
+        padding: 40% 5%;
+    } 
+    #faqBox {
+        font-size: 0.7rem;
+        flex-direction: column;
+        width: 95%;
+        padding: 10px;
+    }
+    div.left {
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-size: 85%;
+        background-position: 50% 100%;
+        width: 100%;
+        overflow: visible;
+        padding-bottom: 10%;
+    }
+    img.img1 {
+        width: 28%;
+        left: 47px;
+        top: 15%;
+        position: absolute;
+        visibility: visible;
+    }
+    img.img2 {
+        width: 80%;
+        margin-top: -120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.right {
+        width: fit-content;
+    }
+    h2 {
+        text-align: center;
+    }
+    p {
+        line-height: 1.5rem;
+    }
+    img.float {
+        margin-left: 30px;
+    }
+}
